@@ -1,4 +1,11 @@
 .slow-spin {
   -webkit-animation: fa-spin 6s infinite linear;
   animation: fa-spin 6s infinite linear;
+  text-align: center;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: auto 33% auto;
+  text-align: center;
 }
