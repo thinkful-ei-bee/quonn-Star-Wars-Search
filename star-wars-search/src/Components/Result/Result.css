@@ -1,0 +1,16 @@
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+li{
+    box-shadow: 1px 1px 1px #999;
+    border-radius: 5px;
+    padding: 10px;
+    background: black;
+    color: gold;
+    margin-bottom: 5px;
+}
+
+.result{
+    text-align: left;
+}
