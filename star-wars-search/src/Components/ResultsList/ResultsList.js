@@ -4,7 +4,6 @@ import Result from "../Result/Result";
 const uuidv4 = require('uuid/v4');
 
 function ResultsList(props) {
-    console.log(props.results)
     let searchResults;
     if(!props.results.length){
         searchResults = props.results
