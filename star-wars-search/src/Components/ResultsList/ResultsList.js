@@ -5,12 +5,17 @@ const uuidv4 = require('uuid/v4');
 
 function ResultsList(props) {
     console.log(props.results)
+    let searchResults;
+    if(!props.results.length){
+        searchResults = props.results
+    }else{
+        searchResults = props.results.map(result => {
+            return <Result id={uuidv4()} result={result}></Result>
+         })
+    }
     return <div>
-        <ul>
-            {props.results.map(result => {
-               return <Result id={uuidv4()} result={result}></Result>
-            })}
-          </ul>
+        {searchResults}
+        
     </div>
 }
 

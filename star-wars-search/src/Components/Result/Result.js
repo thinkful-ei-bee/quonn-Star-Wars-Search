@@ -8,14 +8,18 @@ class Result extends Component {
             showName: true
         }
     }
-
+    renderStuff = () => {
+        return <p>poll</p>
+    }
     render() {
+        let stuff = this.renderStuff
         const result = this.props.result;
         return <div key={this.props.id} id={this.props.red}>
             <li className="result">
                 <p>{result.name}</p>
                 <p></p>
             </li>
+            {stuff}
         </div>
     }
 

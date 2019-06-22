@@ -73,10 +73,13 @@ class App extends Component {
     }
 
     render() {
-        const results = this.state.results;
+        let results = this.state.results;
         const loading = this.state.loading;
         const searchTerm = this.state.searchTerm;
         const filterVal = this.state.filterVal;
+
+        if(results.length === 0)
+        results = <p>Input A valid search term...</p>
         return (
             <div className="App">
                 <div></div>
